@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    /* Styles for header */
+    nav ul{
+        display: inline;
+    }
+    header {
+      color: white;
+    }
+  
+    /* Styles for navigation */
+  
+    nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5em 1em;
+    }
+       
+    /* Styles for main content */
+  
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .card {
+      width:45%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 10px;
+      display: block;
+      overflow: hidden;
+    }
+  }
+  
+  

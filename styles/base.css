@@ -1,0 +1,210 @@
+body {
+
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styles for headings */
+  
+  h1, h2 {
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  /* Styles for images */
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Styles for lists */
+  
+  ul {
+    list-style: none;
+    padding: 30;
+    margin: 30;
+  }
+  
+  li {
+    margin: 0.5em 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: #333;
+  }
+  nav a:hover{
+    border: 1px solid #fff;
+    background-color: rgb(139, 195, 233);
+    padding: 1.5rem;
+  }
+  /* Styles for sections */
+  
+  .card {
+    margin: 1em 0;
+    padding: 2em;
+    border: 1px solid #041c5f;
+    border-radius: 5px;
+    color: #184f87;
+  }
+  
+  /* Styles for footer */
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
+    margin-top: 1em;
+    border-top: 1px solid #2d5076;
+    background-color: #2d5076;
+  }
+  
+  footer p {
+    margin: 0.5em 0;
+  }
+
+  body {
+    background-color: white;
+    color: #041c5f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color:#2d5076;
+    padding: 0.5em 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header span {
+    margin-left: 1em;
+    align-items: center;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  .card {
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0;
+    display: block;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .card section {
+    display: block;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0;
+    grid: 1/5;
+  }
+
+  footer {
+    background-color: #2d5076; /* Lighter gray background */
+    color: #eaecf1; /* Dark gray text */
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
+    margin-top: 1em;
+    border-top: 1px solid #2d5076; /* Light gray border */
+  }
+
+  body {
+    background-color: white; /* Light gray background */
+    color: #041c5f; /* Dark gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  nav {
+    display: flex; /* Make the navigation container horizontal */
+    justify-content: space-around; /* Distribute links evenly within the container */
+    padding: 0.5em 1em; /* Add some padding for spacing */
+  }
+  
+  nav ul { /* Remove inline display set previously */
+    display: block; /* Set the list to display as a block for better structure */
+    list-style: none; /* Remove default bullet points */
+    padding: 20; /* Remove default padding */
+    margin: 20; /* Remove default margin */
+  }
+  
+  nav li { /* Style individual list items (links) */
+    margin: 20; /* Remove default margin */
+  }
+
+  
+
+  nav ul {
+    list-style-type: none;
+    padding: 30;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 100px; /* Adjust the spacing between items as needed */
+    /*background-color: #333;*/
+    /*color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;*/
+  }
+
+  nav {
+    background-color:black;
+  }
+  
+  header.centered {
+    text-align: center;
+}
+
+header.centered span {
+    display: block;
+}
