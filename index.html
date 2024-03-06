@@ -10,17 +10,9 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <header>
+    <header class="centered">
         <img src="images/profile.jpg" alt="Daniel Nkunzimana">
-        
-            <h1><span>Daniel Nkunzimana </span></h1>
-        
-        
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-
+        <span>Daniel Nkunzimana</span>
     </header>
     <nav>
         <ul>
@@ -33,9 +25,7 @@
     <main>
         <h1><u>WDD 230: Web Frontend Development</u></h1>
         <section class="card">
-            <footer style="background-color: #2d5076; display:grid; grid-template-columns: 2fr;"> 
-            <h2>Learning Activities</h2>
-            </footer>
+            <div class="title">Learning Activities</div>
             <ul>
                 <li>Week 01: Layout | Media Query | JS Pen</li>
                 <li>Week 02: </li>
@@ -45,10 +35,8 @@
                 <li>Week 06: </li>
             </ul>
         </section>
-        <section class="card">
-            <footer style="background-color: #2d5076;">
-            <h2>Information</h2>
-            </footer>
+        <section class="card information">
+            <div class="title">Information</div>
             <p>RWANDA weather forecast
                 UV index
                 1, Low
@@ -61,6 +49,7 @@
             <p>Page Visits: 15</p>
         </section>
     </main>
+    
     <footer>
         <p>&copy; <span id="year"></span> Daniel Nkunzimana Rwanda</p>
         <p id="lastModified"></p>
