@@ -22,7 +22,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      width: 80%;
+      width: 70%;
       margin: 0 auto;
   }
 
@@ -30,7 +30,7 @@
       width:45%;
       display: grid;
       grid-template-columns: 2fr 1fr;
-      column-gap: 10px;
+      column-gap: 3px;
       display: block;
       overflow: hidden;
   }
