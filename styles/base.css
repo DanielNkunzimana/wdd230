@@ -60,7 +60,7 @@ nav ul {
 
 .card {
   border-radius: 5px;
-  margin: 0.1em 0.1em 0.1em 0; /* Adjust the margin as needed */
+  margin: 10px; /* Adjust the margin as needed */
   overflow: hidden;
   border: #2d5076 1px solid;
 }
@@ -89,13 +89,13 @@ nav ul {
 }
 
 footer {
-  background-color: #2d5076; /* Lighter gray background */
-  color:white; /* Dark gray text */
+  background-color: #2d5076; 
+  color:white; 
   text-align: center;
   padding: 1em;
   font-size: 0.8em;
   margin-top: 1em;
-  border-top: 1px solid #dddddd; /* Light gray border */
+  border-top: 1px solid #dddddd; 
 }
 
 nav ul li {
