@@ -9,6 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(219, 248, 219);
     color: #333;
+    margin-bottom: 800px;
 }
 
 header {
@@ -88,4 +89,12 @@ footer {
 .digital.title2 {
   grid-template-columns: 1fr 0.3fr; /* Adjust the ratio as needed */
   width: 280px;
+}
+
+.wire{
+    align-items: right;
+    margin-left: 600px;
+    margin-top: 20px;
+    justify-content: center;
+    margin: 40px;
 }
