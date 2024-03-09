@@ -97,3 +97,7 @@ footer {
     justify-content: center;
     margin: 40px;
 }
+img {
+    width: 500px;
+    height: 210;
+}
