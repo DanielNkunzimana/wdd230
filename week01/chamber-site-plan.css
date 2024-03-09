@@ -101,3 +101,9 @@ img {
     width: 500px;
     height: 230px;
 }
+
+.SiteName {
+    text-align: center;
+    margin:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
