@@ -103,3 +103,43 @@ nav ul li {
   margin-right: 10px; /* Adjust the spacing between items as needed */
   margin: 100px;
 }
+
+nav ul {
+  display: none; /* Hide the menu items by default */
+}
+
+nav ul.show-menu {
+  display: block; /* Show the menu items when the .show-menu class is applied */
+}
+
+#close-menu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: #041c5f;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #041c5f;
+  color: white;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 53px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgb(236, 248, 219);
+  border-radius: 600px;
+}
