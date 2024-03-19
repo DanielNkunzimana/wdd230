@@ -1,0 +1,109 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* background-color: #f0f0f0;*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(219, 248, 219);
+    color: #333;
+    margin-bottom: 800px;
+}
+
+header {
+    background-color: #2d5076;
+    padding: 1em;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 180px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(249, 106, 106);
+    border-radius: 2px;
+    padding: 1em;
+  }
+  
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2d5076;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.digital {
+    border: black solid 5px;
+    border-radius: 20px;
+    padding: 1em;
+    margin: 10px;
+    width:45%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3px;
+    display: block;
+    overflow: hidden;
+}
+.title {
+    background-color: #2d5076;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+.title2 {
+    background-color: #2d5076;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+.digital.title {
+  grid-template-columns: 2fr 1fr;
+  width: 60px;
+}
+
+.digital.title2 {
+  grid-template-columns: 1fr 0.3fr; /* Adjust the ratio as needed */
+  width: 280px;
+}
+
+.wire{
+    margin-left: 600px;
+    margin-top: 20px;
+    justify-content: center;
+    margin: 40px;
+}
+img {
+    width: 500px;
+    height: 230px;
+}
+
+.SiteName {
+    text-align: center;
+    margin:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
