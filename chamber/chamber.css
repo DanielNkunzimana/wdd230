@@ -31,3 +31,54 @@ body, html {
 .hero-content p {
     font-size: 1.2em;
 }
+
+/* Add CSS for the hamburger menu */
+.menu-icon {
+    display: none; /* Initially hide hamburger menu icon */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px auto;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.show-menu .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.show-menu .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.show-menu .bar:nth-child(3) {
+    transform: translateY(-3px) rotate(-25deg);
+}
+
+/* Hide menu items by default on smaller screens */
+nav ul {
+    display: none;
+}
+
+/* Display menu items when hamburger menu is clicked */
+.show-menu nav ul {
+    display: block;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 767px) {
+    .menu-icon {
+        display: block; /* Show hamburger menu icon on smaller screens */
+    }
+
+    nav ul {
+        display: none; /* Hide menu items on smaller screens by default */
+    }
+
+    #close-menu {
+        display: none; /* Hide close menu button on smaller screens */
+    }
+}

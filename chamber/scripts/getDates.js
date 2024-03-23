@@ -5,25 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
         lastModifiedElement.textContent = "Last modified: " + document.lastModified;
     }
 
-    // Toggle menu on click
-    const menuToggle = document.getElementById('menu-toggle');
-    const navItems = document.querySelector('nav ul');
-
-    if (menuToggle && navItems) {
-        menuToggle.addEventListener('click', function() {
-            navItems.classList.toggle('show-menu');
-        });
-    }
-});
-document.addEventListener('DOMContentLoaded', function() {
-    // Toggle menu on click
-    const menuToggle = document.getElementById('menu-toggle');
-    const navItems = document.querySelector('nav ul');
-
-    if (menuToggle && navItems) {
-        menuToggle.addEventListener('click', function() {
-            navItems.classList.toggle('show-menu');
-        });
-    }
-});
-
+    document.addEventListener('DOMContentLoaded', function() {
+        // Toggle menu on click
+        const menuToggle = document.getElementById('menu-toggle');
+        const navItems = document.querySelector('nav ul');
+    
+        if (menuToggle && navItems) {
+            menuToggle.addEventListener('click', function() {
+                navItems.classList.toggle('show-menu');
+            });
+        }
+    });
+})    
