@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('images/digital2.jpg'); /* Specify the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    color: white; /* Text color on top of the image */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}

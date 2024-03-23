@@ -1,31 +1,35 @@
-/* Normalize CSS */
-@import url('path/to/normalize.css');
-body {
-  background-color: white;
-  color: #041c5f;
-  font-family: Arial, sans-serif;
+body, html {
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: #2d5076;
-  padding: 0.5em 0.5em;
-  display: flex;
+header{
+  background-color: rgb(140, 145, 140);
+  padding: 1em;
+  color:white;
+}
+footer {
   align-items: center;
   justify-content: center;
-}
-
-header span {
-  margin-left: 1em;
-  align-items: center;
   text-align: center;
-  color: rgb(249, 226, 226);
-  font-size: 40px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(140, 145, 140);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-a {
+nav ul {
+  list-style: none;
+  margin: 30px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 180px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
 }
 
@@ -33,116 +37,17 @@ a:hover {
   color: white;
   background-color: rgb(249, 106, 106);
   border-radius: 2px;
-  padding: 2em;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 2em 1em;
-  background-color: black;
-}
-
-nav ul {
-  display: block;
-  list-style: none;
-  padding: 20px; 
-  margin: 20px; 
-}
-
-nav li {
-  margin: 20px; 
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 1em;
 }
 
 .card {
-  border-radius: 5px;
-  margin: 10px; /* Adjust the margin as needed */
-  overflow: hidden;
-  border: #2d5076 1px solid;
-}
-
-.card .title {
-  background-color: #2d5076;
-  color: white;
-  padding: 1em;
-  margin: 0;
-}
-
-.card ul,
-.card p {
-  padding: 1em;
-  margin: 0;
-}
-
-.card.learning-activities {
-  grid-template-columns: 2fr 1fr;
-  width: 60px;
-}
-
-.card.information {
-  grid-template-columns: 1fr 0.3fr; /* Adjust the ratio as needed */
-  width: 280px;
-}
-
-footer {
-  background-color: #2d5076; 
-  color:white; 
-  text-align: center;
-  padding: 1em;
-  font-size: 0.8em;
-  margin-top: 1em;
-  border-top: 1px solid #dddddd; 
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px; /* Adjust the spacing between items as needed */
-  margin: 100px;
-}
-
-nav ul {
-  display: none; /* Hide the menu items by default */
-}
-
-nav ul.show-menu {
-  display: block; /* Show the menu items when the .show-menu class is applied */
-}
-
-#close-menu {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  background-color: greenyellow;
-}
-
-/* Light mode styles */
-.light-mode {
-  background-color: white;
-  color: #041c5f;
-}
-
-/* Dark mode styles */
-.dark-mode {
-  background-color: #041c5f;
-  color: white;
-}
-
-#dark-mode-toggle {
-  position: absolute;
-  top: 10px;
-  right: 53px;
-  font-size: 24px;
-  cursor: pointer;
-  background-color: rgb(236, 248, 219);
-  border-radius: 600px;
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  border: 2px solid #e9e5e5;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin between cards */
+  margin: 10px;
+  background-color: rgb(246, 248, 246);
 }
