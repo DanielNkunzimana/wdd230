@@ -5,7 +5,12 @@
         width: 70%;
         margin: auto;
     }
-
+    .laptop {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+    }
     .card {
         width: 48%;
         display: inline-block;
