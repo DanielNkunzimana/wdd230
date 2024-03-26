@@ -192,23 +192,21 @@ main {
   height: 100%;
 }
 /* About iframe */
-
-/* Add this CSS to center the iframe */
 .iframe-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensure the container takes up the full height of the viewport */
+  height: 100%; 
 }
 
 iframe {
-  max-width: 90%; /* Adjust as needed */
-  max-height: 90vh; /* Adjust as needed */
+  max-width: 100%; 
+  max-height: 100vh; 
   border: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 968px) {
   .iframe-container {
-    height: 80vh; /* Adjust as needed */
+    height: 100vh; 
   }
 }
