@@ -61,7 +61,7 @@ nav ul {
 
 .card {
   border-radius: 5px;
-  margin: 10px; /* Adjust the margin as needed */
+  margin: 5px; /* Adjust the margin as needed */
   overflow: hidden;
   border: #2d5076 1px solid;
 }
@@ -143,4 +143,72 @@ nav ul.show-menu {
   cursor: pointer;
   background-color: rgb(236, 248, 219);
   border-radius: 600px;
+}
+
+
+/* about hero image*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+main {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.hero {
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.herolabel {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 0.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+/* About iframe */
+
+/* Add this CSS to center the iframe */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container takes up the full height of the viewport */
+}
+
+iframe {
+  max-width: 90%; /* Adjust as needed */
+  max-height: 90vh; /* Adjust as needed */
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .iframe-container {
+    height: 80vh; /* Adjust as needed */
+  }
 }

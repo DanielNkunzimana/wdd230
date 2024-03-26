@@ -35,3 +35,25 @@
       overflow: hidden;
   }
 }
+
+
+.iframe-container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 300px;
+    width: 1000px;
+  }
+  
+  iframe {
+    max-width: 1000%; /* Adjust as needed */
+    max-height: 900vh; /* Adjust as needed */
+    border: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .iframe-container {
+        height: 80vh; /* Adjust as needed */
+    }
+  }
+  
