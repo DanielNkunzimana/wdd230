@@ -67,4 +67,6 @@ a:hover {
 
 .main-content img:hover{
   opacity: 1;
+  transition: 1s;
+  transform: scale(1);
 }
