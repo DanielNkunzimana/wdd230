@@ -69,3 +69,34 @@ nav ul {
     display: block;
 }
 }
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+.main-content .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hover effect */
+.image-grid img.hover-effect {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

@@ -2,6 +2,8 @@
 body, html {
   margin: 0;
   padding: 0;
+  color: #000; /* Changed to black text color for better contrast */
+  background-color: #f0f0f0; /* Changed to a slightly darker background color */
 }
 
 header{
@@ -30,7 +32,7 @@ nav ul li {
 }
 
 nav a {
-  color: white;
+  color:whitesmoke;
   text-decoration: none;
 }
 
@@ -61,4 +63,8 @@ a:hover {
   font-size: 24px;
   cursor: pointer;
   background-color: rgb(166, 180, 146);
+}
+
+.main-content img:hover{
+  opacity: 1;
 }
