@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Daniel Nkunzimana's course assignment portal.">
+    <meta name="author" content="Daniel Nkunzimana">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <h1>Buying and Selling Electronic Devices in Our Kigali Chamber of Commerce</h1>
+        <div class="menu-icon"></div>
+        <button id="close-menu" style="display: none;">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="chamber-site-plan.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sidebar">
+            <h2>Visit Information</h2>
+           <!---- <iframe>https://www.msn.com/en-xl/weather/forecast/in-Kigali,Kigali-City?loc=eyJsIjoiS2lnYWxpIiwiciI6IktpZ2FsaSBDaXR5IiwiYyI6IlJ3YW5kYSIsImkiOiJSVyIsImciOiJlbi14bCIsIngiOjMwLjA1MzEwMDU4NTkzNzUsInkiOi0xLjk4MjY0MDAyNzk5OTg3OH0%3D&weadegreetype=C&ocid=msedgntp&cvid=0c2a11f4b7a94440963aad2fb0a0a254&content=TeaserHumidity_wxnwtshmdt&pc=U531&ei=19</iframe>-->
+            <div id="visitInfo"></div>
+        </section>
+        <section class="main-content">
+            <!-- Images will be loaded here -->
+            <img src="images/image1.jpg" loading="lazy">
+            <img src="images/image2.jpg" loading="lazy">
+            <img src="images/image3.jpg" loading="lazy">
+            <img src="images/image4.jpg" loading="lazy">
+            <img src="images/image5.jpg" loading="lazy">
+            <img src="images/image6.jpeg" loading="lazy">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chamber of Commerce</p>
+        <p>Daniel Nkunzimana|wdd230</p><br>
+        <p id="lastModified">
+        <div class="contact">
+            <h2>Contact us:</h2>
+            <p><b>Email:</b> mcdanielgolden11@gmail.com</p>
+            <p><b>Our phone number:</b> +250799359546</p>
+            <p><b>Location:</b> Kigali Rwanda near downtown</p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/discover.js" defer></script>
+</body>
+</html>
