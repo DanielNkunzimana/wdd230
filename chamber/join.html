@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Daniel Nkunzimana's course assignment portal.">
+    <meta name="author" content="Daniel Nkunzimana">
+    <meta property="og:title" content="Daniel Nkunzimana - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fp%2FKigali-city-100043216401950%2F&psig=AOvVaw1Ulem_JAARDiX8OlnDODW0&ust=1710516458587000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIjQiteI9IQDFQAAAAAdAAAAABAJ">
+    <meta property="og:url" content="https://example.com">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="chamber.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <header>
+        <h1>buying and selling electronic device in our Kigali Chamber of Commerce</h1>
+        <div id="menu-toggle" class="menu-icon"></div>
+        <button id="close-menu" style="display: block;">&times;</button>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div>
+                <label for="position">Title/Position:</label>
+                <input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+            </div>
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="organization">Business/Organization Name:</label>
+                <input type="text" id="organization" name="organization" required>
+            </div>
+            <div>
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="">Select Membership Level</option>
+                    <option value="NP">NP Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <div>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <!-- Membership level benefits displayed to the side -->
+        <h2 style="text-align: center; margin:20px;">Membership Benefits:</h2>
+        <p style="margin:20px; text-align: block"><b>Discounts and Cost Savings:</b><br>
+
+        <b>Member Discounts:</b> Many Chambers negotiate discounts with other businesses. 
+        As an e-commerce seller, these cost savings can benefit your bottom line.<br>
+        <b>Business Support and Networking:</b><br>
+        <b>Connections:</b> Chambers provide a platform for networking with other businesses. You can meet potential clients, suppliers, and partners.<br>
+        <b>Referrals:</b> Fellow members may refer customers to your business, especially if they know you offer electronic devices.<br>
+        <b>Advice:</b> Chambers offer business advice, mentorship, and guidance. Whether you are a buyer or seller, this support can be invaluable.<br>
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chamber of Commerce</p>
+        <p>Daniel Nkunzimana|wdd230</p><br>
+        <p id="lastModified">
+        <div class="contact">
+            <h2>Contact us:</h2>
+            <p><b>Email:</b> mcdanielgolden11@gmail.com</p>
+            <p><b>Our phone number:</b> +250799359546</p>
+            <p><b>Location:</b> Kigali Rwanda near downtown</p>
+        </div>
+   
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
