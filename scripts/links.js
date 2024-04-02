@@ -6,7 +6,6 @@ async function getLinks() {
     const response = await fetch(linksURL);
     if (response.ok) {
       const data = await response.json();
-      console.loge(data)
       displayLinks(data.weeks);
     } else {
       throw new Error("Failed to fetch data");
@@ -18,6 +17,8 @@ async function getLinks() {
 
 function displayLinks(weeks) {
   const activityLinksContainer = document.querySelector('.activity-links');
+  activityLinksContainer.innerHTML = ""; // Clear any existing content
+
   weeks.forEach(week => {
     const weekElement = document.createElement('div');
     weekElement.classList.add('week');
@@ -35,7 +36,7 @@ function displayLinks(weeks) {
       listItem.appendChild(linkElement);
       linksList.appendChild(listItem);
     });
-    
+
     weekElement.appendChild(linksList);
     activityLinksContainer.appendChild(weekElement);
   });
