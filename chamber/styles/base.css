@@ -141,7 +141,7 @@ main {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color: rgb(181, 238, 240);
 	text-align: center;
 }
 
@@ -206,7 +206,7 @@ section {
 }
 
 .list section:nth-child(even) {
-	background-color: rgb(187, 238, 219);
+	background-color: rgb(185, 237, 240);
 }
 
 section h3 {
