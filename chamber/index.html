@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,14 +20,14 @@
     <header>
         <h1>buying and selling electronic device in our Kigali Chamber of Commerce</h1>
         <div id="menu-toggle" class="menu-icon"></div>
-        <button id="close-menu" style="display: block;">&times;</button>
+        <button id="close-menu" style="display: none;">&times;</button>
         <div class="menu-icon">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
         <nav>
-            <ul>
+            <ul class="nav-links"> <!-- Add a class to the ul for easier styling -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -35,6 +35,7 @@
             </ul>
         </nav>
     </header>
+    
     <section class="hero">
         <div class="hero-content">
             <h2>Welcome to My Website</h2>
@@ -101,7 +102,27 @@
        
         </section>
     </section>
-    
+    <div class="menu">
+		<button id="grid">⏹️Grid</button>
+		<button id="list">📄List</button>
+	</div>
+	<hr>
+    <article class="grid">
+        <h2>Directory Business:</h2>
+		<!--members data will be here-->
+	</article>
+    <div class="card2">
+        <h2 id="town"></h2> 
+        <img id="graphic" src="" alt="">
+        <p id="discription"></p>
+        <p id="temperature"></p>
+      </div>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <p>Attend the chamber of commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+        <button id="closeBannerBtn">Close</button>
+    </div>
     <footer>
         <p>&copy; 2024 Chamber of Commerce</p>
         <p>Daniel Nkunzimana|wdd230</p><br>
@@ -115,5 +136,7 @@
    
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

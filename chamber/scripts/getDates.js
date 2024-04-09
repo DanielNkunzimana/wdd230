@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle menu on click
     const menuToggle = document.getElementById('menu-toggle');
-    const navItems = document.querySelector('nav ul');
+    const nav = document.querySelector('nav');
+    const navItems = nav.querySelector('ul');
 
-    if (menuToggle && navItems) {
+    if (menuToggle && nav && navItems) {
         menuToggle.addEventListener('click', function() {
             navItems.classList.toggle('show-menu');
         });
@@ -32,17 +33,26 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Displaying visit information...');
         const currentDate = new Date();
         if (!lastVisit) {
-            document.getElementById('visitInfo').textContent = "Welcome! Let us know if you have any questions.";
+            const visitInfoElement = document.getElementById('discription'); // Change 'visitInfo' to an existing element ID
+            if (visitInfoElement) {
+                visitInfoElement.textContent = "Welcome! Let us know if you have any questions.";
+            }
         } else {
             const lastVisitDate = new Date(parseInt(lastVisit));
             console.log('Last visit date:', lastVisitDate);
             const daysDiff = dateDiffInDays(lastVisitDate, currentDate);
             console.log('Days difference:', daysDiff);
             if (daysDiff < 1) {
-                document.getElementById('visitInfo').textContent = "Back so soon! Awesome!";
+                const visitInfoElement = document.getElementById('discription'); // Change 'visitInfo' to an existing element ID
+                if (visitInfoElement) {
+                    visitInfoElement.textContent = "Back so soon! Awesome!";
+                }
             } else {
                 const pluralSuffix = daysDiff === 1 ? "" : "s";
-                document.getElementById('visitInfo').textContent = `You last visited ${daysDiff} day${pluralSuffix} ago.`;
+                const visitInfoElement = document.getElementById('discription'); // Change 'visitInfo' to an existing element ID
+                if (visitInfoElement) {
+                    visitInfoElement.textContent = `You last visited ${daysDiff} day${pluralSuffix} ago.`;
+                }
             }
         }
     }
